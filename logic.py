@@ -32,7 +32,7 @@ for i,j in g.gdict.items():
     # if len(j)>1:
     for i in j:
         writer(str(list(i.values())[0])+" ")
-        writer(str(int(i['weight'])*2)+'\n')
+        writer(str(i['weight'])+'\n')
 
     # else:
     #     for i in j:

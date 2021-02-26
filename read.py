@@ -1,3 +1,4 @@
+
 files = ['a.txt',
     # 'b.txt',
     # 'c.txt',
@@ -13,7 +14,6 @@ def reader(idx=0):
     with open(curr_file) as f:
         content = f.readlines()
         return content
-    # r----------------------------
 
 
 def writer(content, idx=0):
