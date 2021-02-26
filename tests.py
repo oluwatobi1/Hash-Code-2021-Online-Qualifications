@@ -1,3 +1,5 @@
+#FOr testing the  output format and result 
+#printing out on the console
 from read import reader, writer
 from graph import Graph
 
@@ -13,6 +15,8 @@ for i in range(1, street_count):
     name = street_line[2]
     weight = street_line[3]
     g.AddEdge((end_street, {start_street:name, 'weight':weight}))
+
+
 
 intersections = str(len(g.gdict))
 print(intersections)
