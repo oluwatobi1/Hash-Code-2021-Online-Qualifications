@@ -13,16 +13,20 @@ for i in range(1, street_count):
     # get an/the/current individual street
     street_line = a[i][:-1].split(' ')
     # print(street_line)    
+    # nodes/edges of the graph
     start_street = street_line[0]
     end_street = street_line[1]
+    #add to the graph data struct to in form of a 
     name = street_line[2]
     weight = street_line[3]
+    # populates the graph 
     g.AddEdge((end_street, {start_street:name, 'weight':weight}))
 
 
-
+# gets the intersection
 intersections = str(len(g.gdict))
 print(intersections)
+
 for i,j in g.gdict.items():
     print(str(i))
     print(str(len(j)))

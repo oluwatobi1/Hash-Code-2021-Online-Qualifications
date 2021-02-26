@@ -22,17 +22,20 @@ for i in range(1, street_count):
 
 # gets the intersection
 intersections = str(len(g.gdict))
+
+#Writes out to the file
 writer(intersections+'\n')
+# going through the graph underlying datastruture, 
 for i,j in g.gdict.items():
     writer(str(i+'\n'))
     writer(str(len(j))+'\n')
-    if len(j)>1:
-        for i in j:
-            writer(str(list(i.values())[0])+" ")
-            writer(str(int(i['weight'])*2)+'\n')
+    # if len(j)>1:
+    for i in j:
+        writer(str(list(i.values())[0])+" ")
+        writer(str(int(i['weight'])*2)+'\n')
 
-    else:
-        for i in j:
-            writer(str(list(i.values())[0])+" ")
-            writer(str(i['weight'])+'\n')
+    # else:
+    #     for i in j:
+    #         writer(str(list(i.values())[0])+" ")
+    #         writer(str(i['weight'])+'\n')
 
