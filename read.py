@@ -5,6 +5,7 @@ files = ['a.txt',
     # 'e.txt',
     # 'f.txt',
     ]
+
 def reader(idx=0):
     
     curr_file = files[idx]
@@ -18,7 +19,6 @@ def reader(idx=0):
 def writer(content, idx=0):
         
     curr_file = files[idx]
-    # r----------------------------
     # write file out
     with open(curr_file+'_2out.txt', 'a') as the_file:
             the_file.write(str(content))
@@ -27,5 +27,5 @@ def writer(content, idx=0):
     #         for i in content:
     #             the_file.write(i)
 
-    # except:
+
         

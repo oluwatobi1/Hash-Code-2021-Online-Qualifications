@@ -3,11 +3,14 @@
 from read import reader, writer
 from graph import Graph
 
+# reads the file content into var a
 a = reader()
+# gets street count from first line through indexing
 street_count = int(a[0].split(' ')[2])
-
+# graph problem -=- graph class
 g = Graph()
 for i in range(1, street_count): 
+    # get an/the/current individual street
     street_line = a[i][:-1].split(' ')
     # print(street_line)    
     start_street = street_line[0]
